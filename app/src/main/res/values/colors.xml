@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#2E3192</color>
+    <color name="purple_500">#3236A0</color>
+    <color name="purple_700">#2F32A4</color>
+    <color name="teal_200">#fff</color>
+    <color name="teal_700">#fff</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#000</color>
+    <color name="red">#D32F2F</color>
+    <color name="statusBarColor">#000</color>
+    <color name="grey">#999999</color>
+    <color name="black_et">#424141</color>
+    <color name="skyblue">#56BCE7</color>
+    <color name="golden">#2196F3</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#9C27B0</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#7B1FA2</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#E1BEE7</color>
+
+    <!-- Placeholder colors-->
+    <color name="stay_color">#999999</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+    </array>
+
+
+    <array name="transfer">
+        <item>BTC</item>
+        <item>BNB</item>
+        <item>ETH</item>
+        <item>USDT</item>
+    </array>
+
+
+    <array name="biller">
+        <item> Select Service Category</item>
+    </array>
+    <array name="operator">
+        <item>Select Operator</item>
+    </array>
+    <array name="circle">
+        <item>Select Circle</item>
+        <item>Andhra Pradesh Telangana</item>
+        <item>Assam</item>
+        <item>Chennai</item>
+        <item>Delhi NCR</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu Kashmir</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Kolkata</item>
+        <item>Madhya Pradesh Chhattisgarh</item>
+        <item>Maharashtra Goa</item>
+        <item>Mumbai</item>
+        <item>North East</item>
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Tamil Nadu</item>
+        <item>UP East</item>
+        <item>UP West</item>
+        <item>West Bengal</item>
+    </array>
+
+
+
+    <color name="yellow">#fff</color>
+    <color name="buttoncolor">#fff</color>
+    <color name="text_grey">#eee</color>
+    <color name="darkgray">#93959A</color>
+    <color name="transparent">#8e030303</color>
+
+    <color name="org">#F7B900</color>
+    <color name="a_white">#ffffff</color>
+
+
+</resources>

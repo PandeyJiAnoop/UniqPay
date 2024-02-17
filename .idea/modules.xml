@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/UniqPay.iml" filepath="$PROJECT_DIR$/.idea/modules/UniqPay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UniqPay.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UniqPay.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UniqPay.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UniqPay.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UniqPay.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UniqPay.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UniqPay.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UniqPay.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

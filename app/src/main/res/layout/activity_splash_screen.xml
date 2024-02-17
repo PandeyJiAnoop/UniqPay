@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_three"
+    android:id="@+id/rl">
+
+    <RelativeLayout android:layout_centerInParent="true"
+        android:layout_width="match_parent" android:id="@+id/logo_rl"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/unp_logo">
+        </ImageView>
+        <TextView
+            android:layout_below="@id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:padding="2dp" android:textAlignment="center"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="A Unique Concept of Services &amp; Income" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:textSize="28dp"
+            android:visibility="gone"
+            android:text="Customer \n SignIn"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loading_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progressbackground" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

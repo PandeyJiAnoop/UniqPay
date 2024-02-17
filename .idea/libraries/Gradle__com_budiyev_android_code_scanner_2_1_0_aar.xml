@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.budiyev.android:code-scanner:2.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/45926cce1eadea25582ffc2f14667a8d/transformed/jetified-code-scanner-2.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/45926cce1eadea25582ffc2f14667a8d/transformed/jetified-code-scanner-2.1.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/45926cce1eadea25582ffc2f14667a8d/transformed/jetified-code-scanner-2.1.0/res" />
+      <root url="file://C:/Program Files/Java/jdk-18.0.2/bin/caches/transforms-3/45926cce1eadea25582ffc2f14667a8d/transformed/jetified-code-scanner-2.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/modules-2/files-2.1/com.budiyev.android/code-scanner/2.1.0/50b384a1ffe3410a467ba6b3e6a3e958ccaeefe1/code-scanner-2.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/Program Files/Java/jdk-18.0.2/bin/caches/modules-2/files-2.1/com.budiyev.android/code-scanner/2.1.0/ef5085691e7e1b7df451210b4a9a48095872c9e9/code-scanner-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

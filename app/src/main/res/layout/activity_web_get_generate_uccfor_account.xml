@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_three"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout android:visibility="gone"
+        android:background="#0972C5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/url_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:text="Id not found!"
+            android:textColor="@color/buttoncolor"
+            android:textIsSelectable="true"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <Button android:id="@+id/click_rl"
+            android:backgroundTint="#F44336"
+            android:layout_alignParentRight="true"
+            android:layout_width="150dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Click to Copy!"
+            android:textColor="@color/buttoncolor"
+            android:textSize="12dp"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <TextView android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:text="Note :- Copy &amp; Open Links Directly into Chrome's Incognito Mode"
+        android:textColor="@color/red"
+        android:textIsSelectable="true"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/activity_main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

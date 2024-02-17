@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_three"
+    android:orientation="vertical">
+  <!-- TODO: Update blank fragment layout -->
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        tools:ignore="NewApi">
+      <RelativeLayout
+          android:id="@+id/header"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@color/purple_500">
+        <ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/buttoncolor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/menuImg"
+            android:gravity="center_vertical"
+            android:text="Raise Add Request"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+      </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+  </com.google.android.material.appbar.AppBarLayout>
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+      android:orientation="vertical"
+        android:layout_height="wrap_content">
+      <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:id="@+id/rdGroup"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          android:layout_gravity="center">
+        <RadioButton  android:textColor="@color/white"
+            android:id="@+id/btc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton  android:textColor="@color/white"
+            android:id="@+id/bnb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="BNB"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/eth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="ETH"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton  android:textColor="@color/white"
+            android:id="@+id/usdt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="USDT"
+            android:onClick="onRadioButtonClicked"/>
+      </RadioGroup>
+
+
+      <ImageView
+          android:id="@+id/image_qr"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </ImageView>
+      <TextView
+          android:id="@+id/url_tv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:background="#03A9F4"
+          android:text="Id not found!"
+          android:layout_marginTop="20dp"
+          android:textColor="@color/white"
+          android:textSize="14dp"
+          android:padding="10dp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp"
+          android:text="USD Amount"
+          android:textColor="@color/white" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  android:textColorHint="@color/darkgray"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="0dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/rounded_edittext_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="Enter USD Amount"
+            android:textColorHint="@color/text_grey"
+            android:singleLine="true" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp"
+          android:text="Coin "
+          android:textColor="@color/white" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  android:textColorHint="@color/darkgray"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="0dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/rounded_edittext_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:hint="Enter Coin" android:textColorHint="@color/text_grey"
+            android:singleLine="true" />
+      </com.google.android.material.textfield.TextInputLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp"
+          android:text="UTR No. "
+          android:textColor="@color/white" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"  android:textColorHint="@color/darkgray"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="0dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/rounded_edittext_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" android:textColorHint="@color/text_grey"
+            android:hint="Enter UTR No."
+            android:singleLine="true" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp"
+          android:text="Receipt"
+          android:textColor="@color/white" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/rectangle"
+          android:orientation="horizontal"
+          android:layout_marginBottom="20dp"
+          android:layout_marginLeft="10dp"
+          android:padding="5dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/img_showProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:background="@drawable/a4"
+            android:scaleType="fitXY" />
+        <TextView
+            android:id="@+id/select_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:text="Choose File"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit_style"
+            android:textSize="12dp"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:textColor="@color/buttoncolor"/>
+      </LinearLayout>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btn_submit"
+          android:layout_width="250dp"
+          android:layout_height="40dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:layout_marginBottom="50dp"
+          android:background="@drawable/rectangle_red"
+          android:text="Send"
+          android:textColor="@color/white" />
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

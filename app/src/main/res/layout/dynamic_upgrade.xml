@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:id="@+id/one"
+        app:cardBackgroundColor="#3FD0E3"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView android:id="@+id/img"
+                    android:layout_width="80dp"
+                    android:src="@drawable/m1"
+                    android:padding="5dp"
+                    android:layout_height="80dp">
+                </ImageView>
+                <TextView android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Upgrade to \nClassic"
+                    android:textStyle="bold" android:textSize="18dp"
+                    android:textColor="@color/buttoncolor" />
+            </LinearLayout>
+            <TextView android:id="@+id/des_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Description &amp; Price"
+                android:textStyle="bold" android:textSize="16dp"
+                android:textColor="@color/buttoncolor" />
+
+            <View
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/grey"
+                android:layout_height="1dp">
+            </View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="(Rs.400)"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold" android:textSize="25dp"
+                    android:textColor="@color/buttoncolor" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp" android:layout_alignParentRight="true"
+                    android:text="Buy" android:id="@+id/buy"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="end"
+                    android:backgroundTint="#FF9800"
+                    android:background="@drawable/rectangle_red"
+                    android:layout_height="45dp">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
